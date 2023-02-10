@@ -47,6 +47,14 @@ Select DISTINCT make, color FROM registration where make = 'FERRARI';
  FERRARI | RED
  FERRARI | 
 
+-- How many Ferrais are red?
+SELECT DISTINCT make, count(color) FROM registration WHERE make = 'FERRARI' and color = 'RED' GROUP BY make;
+  make   | count 
+---------+-------
+ FERRARI |     1
+(1 row)
+
+
 --Count of Tesla model?
 
 SELECT model, count(model) FROM registration WHERE make = 'TESLA' GROUP BY model;

@@ -24,4 +24,4 @@ CREATE TABLE registration (
     TransactionCount VARCHAR
 );
 
-\COPY registration FROM '/Users/eric/Documents/GitHub/IT120/v50k/vrt50k.csv' CSV;
+\COPY registration FROM '/Users/eric/Documents/GitHub/IT120/v50k/vrt50k.csv' CSV;queries
